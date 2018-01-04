@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="format-detection" content="telephone=no" />
+    <meta name="msapplication-tap-highlight" content="no" />
+    <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width" />
+    <meta http-equiv="Content-Security-Policy" content="default-src * 'unsafe-inline'; style-src 'self' 'unsafe-inline'; media-src *" />
+	<title> Little Spend </title>
+	<link rel="stylesheet" href="css/login.css"> 	 
+</head>
+
+<body>
+    <div class="app">
+        <div id="deviceready" class="blink">
+			<div class='loader'>
+				<img src='img/loader.png'/>
+				<label class='loader-label'> Loading ... </label>
+			</div>
+			
+
+		<div class='fade fade-out'>	
+			<center>
+				<div class="login-page">
+					  <div class="form">
+							<form action ="" method = "post" class="register-form" onsubmit="return check()">					
+								  <div id="test">
+									  <label style=' color:white; font-size:20px;'> Create Account </label>
+									  <br><br>
+									  <select class='registerRole'> 
+										<option value='' selected disabled>Register as ... </option>
+										<option value='parent'>Parent </option>
+										<option value='child'> Child </option>
+										<option value='shop'> Shop </option>
+									  </select>
+									  <input type="text" class='registerUsername' placeholder="Username" name="username" required/>
+									  <input class='registerPass' id="pass" type="password" placeholder="Password" name="password" required onkeyup="checkPass(); return false;"/>
+									  <input  id="confirmpass" type="password" placeholder="Confirm password" required  onkeyup="checkPass(); return false;"/>
+									  <input class='registerEmail' type="email" name="email" placeholder="Email address" required/>
+									  <button class='registerBtn' type='button' name="register">create</button>
+								  </div>
+								  <p class="message"><a href="#"> Already registered?  Sign In</a></p>
+							</form>
+						
+							
+							<form action ="" method = "post"  class="login-form">
+								   <center><img src = 'img/logo.gif' class='logo' >
+									<p class='slogon'> Little Spend </p>
+								   </center>
+									<!--  <h1 style='color:#76b852; border-color:grey;margin:3%;'> i-PreDi </h1> -->
+								  <input type="text" name="username" class='username' placeholder="username"  required/>
+								  <input type="password" name="password"  class='pass' placeholder="password"  required/>
+								  <a href='#'><button class='loginBtn' type='button' name="login">login</button></a>
+								  <p class="message"><a href="#">Create an account</a></p>
+							</form>	
+										
+					  </div>
+					  
+				</div>
+
+						
+			</div>
+		</div>
+	</div>
+</body>
+
+<script type="text/javascript" src="js/index.js"></script>
+<script type="text/javascript" src="js/firebase_script.js"></script>
+<script type="text/javascript" src="js/firebase.js"></script>
+<script type="text/javascript" src="js/jquery.js"></script>
+<script src='js/sweetalert.js'></script>
+
+<script type="text/javascript" src="js/login.js"></script>
+
+
+<script>
+	app.initialize();
+</script>
+
+</html>
+
+
+
+
+

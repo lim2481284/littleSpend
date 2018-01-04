@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="format-detection" content="telephone=no" />
+    <meta name="msapplication-tap-highlight" content="no" />
+    <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width" />
+    <meta http-equiv="Content-Security-Policy" content="default-src * 'unsafe-inline'; style-src 'self' 'unsafe-inline'; media-src *" />
+	<title> Little Spend </title>
+	<link rel="stylesheet" href="css/parent.css"> 	 
+	<link rel="stylesheet" href="css/main.css"> 	 
+</head>
+
+<body>
+    <div class="app">
+        <div id="deviceready" class="blink">
+			<div class='loader'>
+				<img src='img/loader.png'/>
+				<label class='loader-label'> Loading ... </label>
+			</div>
+			
+		
+			<div class='fade fade-out'>	
+			
+		
+				<div  class="open">
+					<span class="cls"></span>
+					<span>
+						<ul class="sub-menu ">
+							<li>
+								<a  class='active' href="parent.html" title="about">Home</a>
+							</li>
+							<li>
+								<a href="account_parent.html" title="skills">Account </a>
+							</li>
+	
+							<li>
+								<a href="index.html" title="jobs">Logout</a>
+							</li>
+
+						</ul>
+					</span>
+					<span class="cls"></span>
+				</div>
+				<button class='createTaskBtn' >Create task</button>
+				<button class='scanBtn defaultBtn' >Scan</button>
+				
+				<div class='bodyContent'>
+					
+					<div class='bodyHeader'>
+						<img src='img/task.png'/>
+						<p>Tasks</p>
+					</div>
+					<div class='taskForm taskToggle'>
+						<label>Task </label>
+						<input type='text' class='taskDescription'  placeholder='Task description...'/>
+						<label>Reward (RM) </label>
+						<input type='text' class='taskReward'   placeholder='Reward...'/>
+						<button class='successBtn createTask'> Create task</button>
+						
+					</div>
+					<div class='taskList taskToggle'>
+						
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</body>
+
+<script type="text/javascript" src="js/index.js"></script>
+<script type="text/javascript" src="js/firebase_script.js"></script>
+<script type="text/javascript" src="js/firebase.js"></script>
+<script type="text/javascript" src="js/jquery.js"></script>
+<script src='js/sweetalert.js'></script>
+<script type="text/javascript" src="js/qr.js"></script>
+<script type="text/javascript" src="js/parent.js"></script>
+<script type="text/javascript" src="js/main.js"></script>
+
+<script>
+	app.initialize();
+</script>
+
+</html>
+
+
+
+
+
